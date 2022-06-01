@@ -1,13 +1,13 @@
 //
-//  VisionaryDesignUITests.swift
-//  VisionaryDesignUITests
+//  VisionaryDesignAppUITests.swift
+//  VisionaryDesignAppUITests
 //
-//  Created by Bianca Onea on 30/05/2022.
+//  Created by Bianca Onea on 01/06/2022.
 //
 
 import XCTest
 
-class VisionaryDesignUITests: XCTestCase {
+class VisionaryDesignAppUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

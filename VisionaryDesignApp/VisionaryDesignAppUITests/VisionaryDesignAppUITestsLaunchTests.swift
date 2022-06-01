@@ -1,13 +1,13 @@
 //
-//  VisionaryDesignUITestsLaunchTests.swift
-//  VisionaryDesignUITests
+//  VisionaryDesignAppUITestsLaunchTests.swift
+//  VisionaryDesignAppUITests
 //
-//  Created by Bianca Onea on 30/05/2022.
+//  Created by Bianca Onea on 01/06/2022.
 //
 
 import XCTest
 
-class VisionaryDesignUITestsLaunchTests: XCTestCase {
+class VisionaryDesignAppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
