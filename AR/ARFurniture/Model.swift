@@ -41,6 +41,8 @@ class Model {
     var modelEntity: ModelEntity?
     var scaleCompensation: Float
     
+    private var cancellable: AnyCancellable?
+    
     
     init(name:String, category:ModelCategory, scaleComponesation: Float = 1.0) {
         self.name = name
@@ -49,15 +51,33 @@ class Model {
         self.scaleCompensation = scaleComponesation
     }
     
+    
+    func asyncLoadModelEntity() {
+        let filename = self.name + ".usdz"
+        self.cancellable = ModelEntity.loadModelAsync(named: filename)
+            .sink(receiveCompletion: { loadCompletion in
+                switch loadCompletion {
+                case .failure(let error): print("Unable to load modelEntity for \(filename).Error: \(error.localizedDescription)")
+                case.finished:
+                    break
+                }
+                                                
+            }, receiveValue: { modelEntity in
+                    self.modelEntity = modelEntity
+                    
+                    self.modelEntity?.scale *= self.scaleCompensation
+                    print("modelEntity for \(self.name) has been loaded.")
+            })
+    }
 }
 
 struct Models {
     var all: [Model] = []
     
     init() {
-        let diningTable = Model(name:"dining_table",category: .table, scaleComponesation: 0.32/100)
-        let familyTable = Model(name:"family_table",category: .table, scaleComponesation: 0.32/100)
-        let teaTable = Model(name:"tea_table",category: .table, scaleComponesation: 0.32/100)
+        let diningTable = Model(name:"dining_table",category: .table, scaleComponesation: 65/100)
+        let familyTable = Model(name:"family_table",category: .table, scaleComponesation: 65/100)
+        let teaTable = Model(name:"tea_table",category: .table, scaleComponesation: 5000/100)
         self.all += [diningTable,familyTable, teaTable]
     }
     

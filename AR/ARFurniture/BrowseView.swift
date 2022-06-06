@@ -51,6 +51,8 @@ struct ModelsByCategories: View {
 
 
 struct HorizontalView: View {
+    
+    @EnvironmentObject var placementSettings: PlacementSettings
     @Binding var showBrowse: Bool
     
     var title:String
@@ -72,8 +74,8 @@ struct HorizontalView: View {
                         
                        let model = items[index]
                         ItemButton(model: model) {
-                            //TODO: call model method to async load modelEntity
-                            //TODO: select model for placement
+                            model.asyncLoadModelEntity()
+                            self.placementSettings.selectedModel = model
                             self.showBrowse = false
                         }
                     }
