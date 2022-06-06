@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D7E0B64C-5E00-4D5C-80C4-89E1063A4480"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DEB5F104-3552-4DA0-ABF6-4B1C2F01B031"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ARFurniture/ControlView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "DEB5F104-3552-4DA0-ABF6-4B1C2F01B031 - d8f4ff6d7e467c9a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ARFurniture.ControlVisibilityToggleButton.body.getter : some"
+                  moduleName = "ARFurniture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matei/Desktop/ARFurniture/ARFurniture/ControlView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "DEB5F104-3552-4DA0-ABF6-4B1C2F01B031 - d90eef98fafc0caa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.EmptyView in ARFurniture.ControlVisibilityToggleButton.body.getter : some"
+                  moduleName = "ARFurniture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/matei/Desktop/ARFurniture/ARFurniture/ControlView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
