@@ -13,6 +13,7 @@ struct ContentView: View {
     @EnvironmentObject var placementSettings: PlacementSettings
     @State private var isControlsVisible: Bool = true
     @State private var showBrowse: Bool = false
+    @State private var showSettings: Bool = false
      
     var body: some View {
         
@@ -20,7 +21,7 @@ struct ContentView: View {
             ARViewContainer()
             
             if self.placementSettings.selectedModel == nil {
-            ControlView(isControlsVisible: $isControlsVisible, showBrowse: $showBrowse)
+                ControlView(isControlsVisible: $isControlsVisible, showBrowse: $showBrowse, showSettings: $showSettings)
             } else {
                 PlacementView()
             }
@@ -33,10 +34,11 @@ struct ContentView: View {
 struct ARViewContainer: UIViewRepresentable {
                             
     @EnvironmentObject var placementSettings: PlacementSettings
+    @EnvironmentObject var sessionSettings: SessionSettings
     
     func makeUIView(context: Context) ->
         CustomARView {
-            let arView = CustomARView(frame: .zero)
+            let arView = CustomARView(frame: .zero, sessionSettings: sessionSettings)
             
             self.placementSettings.sceneObserver = arView.scene.subscribe(to:
                SceneEvents.Update.self, { (event) in
@@ -83,5 +85,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(PlacementSettings())
+            .environmentObject(SessionSettings())
     }
 }

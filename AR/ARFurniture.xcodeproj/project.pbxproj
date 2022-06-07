@@ -11,6 +11,9 @@
 		C29B6595284E0B8A0052B07F /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29B6594284E0B8A0052B07F /* PlacementView.swift */; };
 		C29B6598284E0F900052B07F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = C29B6597284E0F900052B07F /* FocusEntity */; };
 		C29B659A284E0FC30052B07F /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29B6599284E0FC30052B07F /* CustomARView.swift */; };
+		C29B659C284F4A080052B07F /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29B659B284F4A080052B07F /* View+Extensions.swift */; };
+		C29B659E284F4E6D0052B07F /* SessionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29B659D284F4E6D0052B07F /* SessionSettings.swift */; };
+		C29B65A0284F4F0C0052B07F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29B659F284F4F0C0052B07F /* SettingsView.swift */; };
 		C2CD20D2284613350064EBF9 /* ARFurnitureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD20D1284613350064EBF9 /* ARFurnitureApp.swift */; };
 		C2CD20D4284613350064EBF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD20D3284613350064EBF9 /* ContentView.swift */; };
 		C2CD20D6284613370064EBF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CD20D5284613370064EBF9 /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		C29B6592284E0A500052B07F /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		C29B6594284E0B8A0052B07F /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
 		C29B6599284E0FC30052B07F /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		C29B659B284F4A080052B07F /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		C29B659D284F4E6D0052B07F /* SessionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSettings.swift; sourceTree = "<group>"; };
+		C29B659F284F4F0C0052B07F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C2CD20CE284613350064EBF9 /* ARFurniture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARFurniture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CD20D1284613350064EBF9 /* ARFurnitureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARFurnitureApp.swift; sourceTree = "<group>"; };
 		C2CD20D3284613350064EBF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,8 +122,11 @@
 				C2CD20FB28461F190064EBF9 /* ControlView.swift */,
 				C2CD21002848FFCB0064EBF9 /* BrowseView.swift */,
 				C29B6594284E0B8A0052B07F /* PlacementView.swift */,
+				C29B659F284F4F0C0052B07F /* SettingsView.swift */,
 				C29B6592284E0A500052B07F /* PlacementSettings.swift */,
+				C29B659D284F4E6D0052B07F /* SessionSettings.swift */,
 				C2CD21022849F7F60064EBF9 /* Model.swift */,
+				C29B659B284F4A080052B07F /* View+Extensions.swift */,
 				C2CD20FD284654400064EBF9 /* 3D Assets */,
 				C2CD20D5284613370064EBF9 /* Assets.xcassets */,
 				C2CD20D7284613370064EBF9 /* Preview Content */,
@@ -296,6 +305,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29B6593284E0A500052B07F /* PlacementSettings.swift in Sources */,
+				C29B659E284F4E6D0052B07F /* SessionSettings.swift in Sources */,
+				C29B659C284F4A080052B07F /* View+Extensions.swift in Sources */,
 				C2CD21032849F7F60064EBF9 /* Model.swift in Sources */,
 				C2CD21012848FFCB0064EBF9 /* BrowseView.swift in Sources */,
 				C2CD20D4284613350064EBF9 /* ContentView.swift in Sources */,
@@ -303,6 +314,7 @@
 				C2CD20D2284613350064EBF9 /* ARFurnitureApp.swift in Sources */,
 				C29B659A284E0FC30052B07F /* CustomARView.swift in Sources */,
 				C29B6595284E0B8A0052B07F /* PlacementView.swift in Sources */,
+				C29B65A0284F4F0C0052B07F /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

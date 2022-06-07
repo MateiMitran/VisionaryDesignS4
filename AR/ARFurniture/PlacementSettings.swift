@@ -28,8 +28,16 @@ class PlacementSettings: ObservableObject {
             }
             
             print ("Setting confirmedModel to \(model.name)")
+            self.recentlyPlaced.append(model)
         }
     }
+    
+    
+    
+    
+    @Published var recentlyPlaced: [Model] = []
+    
+    
     
     var sceneObserver: Cancellable?
     
