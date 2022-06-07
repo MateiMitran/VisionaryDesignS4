@@ -14,9 +14,9 @@ enum ModelCategory: CaseIterable  {
     
     case table
     case chair
+    case couch
+    case bed
     case decor
-    case light
-    
     
     var label: String {
         get {
@@ -25,10 +25,12 @@ enum ModelCategory: CaseIterable  {
                 return "Tables"
             case .chair:
                 return "Chairs"
+            case .couch:
+                return "Couches"
+            case .bed:
+                return "Beds"
             case .decor:
                 return "Decor"
-            case .light:
-                return "Lights"
             }
         }
     }
@@ -75,10 +77,30 @@ struct Models {
     var all: [Model] = []
     
     init() {
-        let diningTable = Model(name:"dining_table",category: .table, scaleComponesation: 65/100)
-        let familyTable = Model(name:"family_table",category: .table, scaleComponesation: 65/100)
-        let teaTable = Model(name:"tea_table",category: .table, scaleComponesation: 5000/100)
-        self.all += [diningTable,familyTable, teaTable]
+        
+        //tables
+        let coffeeTable = Model(name:"Coffee_Table",category: .table, scaleComponesation: 30/100)
+        let simpleDiningTable = Model(name:"Simple_dining_table",category: .table, scaleComponesation: 25/100)
+        
+        //chairs
+        let basketSwingChair = Model(name:"Basket_Swing_Chair",category: .chair, scaleComponesation: 40/100)
+        let officeChair = Model(name:"Office_chair",category: .chair, scaleComponesation: 75/100)
+        let oldChair = Model(name:"Old_Chair",category: .chair, scaleComponesation: 75/100)
+        
+        //couches
+        let blackLeatherCouch = Model(name:"Black_Leather_Couch",category: .couch, scaleComponesation: 50/100)
+        let grayLShapedCouch = Model(name:"Gray_L-Shaped_Couch",category: .couch, scaleComponesation: 50/100)
+        let modernCouch = Model(name:"Modern_Couch",category: .couch, scaleComponesation: 50/100)
+        
+        //beds
+        let bedMilana = Model(name:"Bed_Milana",category: .bed, scaleComponesation: 35/100)
+        let bedSicilia = Model(name:"Bed_Sicilia",category: .bed, scaleComponesation: 50/100)
+        let modernBed = Model(name:"Modern_Bed",category: .bed, scaleComponesation: 50/100)
+        
+        //decor
+        let modernTableSet = Model(name:"Modern_Table_Set",category: .decor, scaleComponesation: 45/100)
+        
+        self.all += [coffeeTable,simpleDiningTable, basketSwingChair, officeChair, oldChair, blackLeatherCouch, grayLShapedCouch, modernCouch, bedMilana, bedSicilia, modernBed, modernTableSet]
     }
     
     func get(category:ModelCategory) -> [Model]{
