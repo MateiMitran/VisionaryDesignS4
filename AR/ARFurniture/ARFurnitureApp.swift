@@ -14,7 +14,7 @@ struct ARFurnitureApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Landing()
                 .environmentObject(placementSettings)
                 .environmentObject(sessionSettings)
         }

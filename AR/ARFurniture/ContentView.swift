@@ -54,8 +54,13 @@ struct ARViewContainer: UIViewRepresentable {
                           context: Context) {}
     
     private func updateScene(for arView: CustomARView) {
-        
+        #if !targetEnvironment(simulator)
         arView.focusEntity?.isEnabled = self.placementSettings.selectedModel != nil
+        #endif
+        
+        
+        
+        
         
         if let confirmedModel = self.placementSettings.confirmedModel, let modelEntity
             = confirmedModel.modelEntity {
