@@ -8,18 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		498A5B052850BF95007508DD /* Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498A5B042850BF95007508DD /* Landing.swift */; };
-		49FAEF792850A01B008691A1 /* Modern_Couch.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49FAEF6D2850A01A008691A1 /* Modern_Couch.usdz */; };
-		49FAEF7A2850A01B008691A1 /* Basket_Swing_Chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49FAEF6E2850A01A008691A1 /* Basket_Swing_Chair.usdz */; };
-		49FAEF7B2850A01B008691A1 /* Coffee_Table.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49FAEF6F2850A01A008691A1 /* Coffee_Table.usdz */; };
-		49FAEF7C2850A01B008691A1 /* Gray_L-Shaped_Couch.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49FAEF702850A01B008691A1 /* Gray_L-Shaped_Couch.usdz */; };
-		49FAEF7D2850A01B008691A1 /* Modern_Table_Set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49FAEF712850A01B008691A1 /* Modern_Table_Set.usdz */; };
-		49FAEF7E2850A01B008691A1 /* Simple_dining_table.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49FAEF722850A01B008691A1 /* Simple_dining_table.usdz */; };
-		49FAEF7F2850A01B008691A1 /* Office_chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49FAEF732850A01B008691A1 /* Office_chair.usdz */; };
-		49FAEF802850A01B008691A1 /* Black_Leather_Couch.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49FAEF742850A01B008691A1 /* Black_Leather_Couch.usdz */; };
-		49FAEF812850A01B008691A1 /* Old_Chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49FAEF752850A01B008691A1 /* Old_Chair.usdz */; };
-		49FAEF822850A01B008691A1 /* Bed_Milana.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49FAEF762850A01B008691A1 /* Bed_Milana.usdz */; };
-		49FAEF832850A01B008691A1 /* Modern_Bed.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49FAEF772850A01B008691A1 /* Modern_Bed.usdz */; };
-		49FAEF842850A01B008691A1 /* Bed_Sicilia.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 49FAEF782850A01B008691A1 /* Bed_Sicilia.usdz */; };
 		C29B6593284E0A500052B07F /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29B6592284E0A500052B07F /* PlacementSettings.swift */; };
 		C29B6595284E0B8A0052B07F /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29B6594284E0B8A0052B07F /* PlacementView.swift */; };
 		C29B6598284E0F900052B07F /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = C29B6597284E0F900052B07F /* FocusEntity */; };
@@ -37,6 +25,25 @@
 		C2CD20FC28461F190064EBF9 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD20FB28461F190064EBF9 /* ControlView.swift */; };
 		C2CD21012848FFCB0064EBF9 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD21002848FFCB0064EBF9 /* BrowseView.swift */; };
 		C2CD21032849F7F60064EBF9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD21022849F7F60064EBF9 /* Model.swift */; };
+		C2FF6C7728521C7C00917A1B /* Black_Leather_Couch.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C6A28521C7B00917A1B /* Black_Leather_Couch.usdz */; };
+		C2FF6C7828521C7C00917A1B /* Gray_L-Shaped_Couch.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C6B28521C7B00917A1B /* Gray_L-Shaped_Couch.usdz */; };
+		C2FF6C7928521C7C00917A1B /* Modern_Couch.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C6C28521C7B00917A1B /* Modern_Couch.usdz */; };
+		C2FF6C7A28521C7C00917A1B /* Simple_dining_table.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C6D28521C7B00917A1B /* Simple_dining_table.usdz */; };
+		C2FF6C7B28521C7C00917A1B /* Coffee_Table.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C6E28521C7C00917A1B /* Coffee_Table.usdz */; };
+		C2FF6C7C28521C7C00917A1B /* Basket_Swing_Chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C6F28521C7C00917A1B /* Basket_Swing_Chair.usdz */; };
+		C2FF6C7D28521C7C00917A1B /* Modern_Bed.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C7028521C7C00917A1B /* Modern_Bed.usdz */; };
+		C2FF6C7E28521C7C00917A1B /* Office_chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C7128521C7C00917A1B /* Office_chair.usdz */; };
+		C2FF6C7F28521C7C00917A1B /* Old_Chair.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C7228521C7C00917A1B /* Old_Chair.usdz */; };
+		C2FF6C8128521C7C00917A1B /* Bed_Milana.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C7428521C7C00917A1B /* Bed_Milana.usdz */; };
+		C2FF6C8228521C7C00917A1B /* Bed_Sicilia.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C7528521C7C00917A1B /* Bed_Sicilia.usdz */; };
+		C2FF6C8328521C7C00917A1B /* Modern_Table_Set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C7628521C7C00917A1B /* Modern_Table_Set.usdz */; };
+		C2FF6C8628521EF000917A1B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C2FF6C8528521EF000917A1B /* FirebaseAuth */; };
+		C2FF6C8828521EF000917A1B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C2FF6C8728521EF000917A1B /* FirebaseFirestore */; };
+		C2FF6C8A28521EF000917A1B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C2FF6C8928521EF000917A1B /* FirebaseFirestoreSwift */; };
+		C2FF6C8C28521EF000917A1B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C2FF6C8B28521EF000917A1B /* FirebaseStorage */; };
+		C2FF6C8E28521FA500917A1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2FF6C8D28521FA500917A1B /* GoogleService-Info.plist */; };
+		C2FF6C90285223EA00917A1B /* ModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF6C8F285223EA00917A1B /* ModelsViewModel.swift */; };
+		C2FF6C92285228F500917A1B /* FirebaseStorageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FF6C91285228F500917A1B /* FirebaseStorageHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,18 +65,6 @@
 
 /* Begin PBXFileReference section */
 		498A5B042850BF95007508DD /* Landing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landing.swift; sourceTree = "<group>"; };
-		49FAEF6D2850A01A008691A1 /* Modern_Couch.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Modern_Couch.usdz; path = ../../../../Downloads/Assets/Modern_Couch.usdz; sourceTree = "<group>"; };
-		49FAEF6E2850A01A008691A1 /* Basket_Swing_Chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Basket_Swing_Chair.usdz; path = ../../../../Downloads/Assets/Basket_Swing_Chair.usdz; sourceTree = "<group>"; };
-		49FAEF6F2850A01A008691A1 /* Coffee_Table.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Coffee_Table.usdz; path = ../../../../Downloads/Assets/Coffee_Table.usdz; sourceTree = "<group>"; };
-		49FAEF702850A01B008691A1 /* Gray_L-Shaped_Couch.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = "Gray_L-Shaped_Couch.usdz"; path = "../../../../Downloads/Assets/Gray_L-Shaped_Couch.usdz"; sourceTree = "<group>"; };
-		49FAEF712850A01B008691A1 /* Modern_Table_Set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Modern_Table_Set.usdz; path = ../../../../Downloads/Assets/Modern_Table_Set.usdz; sourceTree = "<group>"; };
-		49FAEF722850A01B008691A1 /* Simple_dining_table.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Simple_dining_table.usdz; path = ../../../../Downloads/Assets/Simple_dining_table.usdz; sourceTree = "<group>"; };
-		49FAEF732850A01B008691A1 /* Office_chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Office_chair.usdz; path = ../../../../Downloads/Assets/Office_chair.usdz; sourceTree = "<group>"; };
-		49FAEF742850A01B008691A1 /* Black_Leather_Couch.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Black_Leather_Couch.usdz; path = ../../../../Downloads/Assets/Black_Leather_Couch.usdz; sourceTree = "<group>"; };
-		49FAEF752850A01B008691A1 /* Old_Chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Old_Chair.usdz; path = ../../../../Downloads/Assets/Old_Chair.usdz; sourceTree = "<group>"; };
-		49FAEF762850A01B008691A1 /* Bed_Milana.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Bed_Milana.usdz; path = ../../../../Downloads/Assets/Bed_Milana.usdz; sourceTree = "<group>"; };
-		49FAEF772850A01B008691A1 /* Modern_Bed.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Modern_Bed.usdz; path = ../../../../Downloads/Assets/Modern_Bed.usdz; sourceTree = "<group>"; };
-		49FAEF782850A01B008691A1 /* Bed_Sicilia.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Bed_Sicilia.usdz; path = ../../../../Downloads/Assets/Bed_Sicilia.usdz; sourceTree = "<group>"; };
 		C29B6592284E0A500052B07F /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		C29B6594284E0B8A0052B07F /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
 		C29B6599284E0FC30052B07F /* CustomARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
@@ -89,6 +84,21 @@
 		C2CD20FB28461F190064EBF9 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 		C2CD21002848FFCB0064EBF9 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		C2CD21022849F7F60064EBF9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C2FF6C6A28521C7B00917A1B /* Black_Leather_Couch.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Black_Leather_Couch.usdz; path = ../../../../../../Downloads/Black_Leather_Couch.usdz; sourceTree = "<group>"; };
+		C2FF6C6B28521C7B00917A1B /* Gray_L-Shaped_Couch.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = "Gray_L-Shaped_Couch.usdz"; path = "../../../../../../Downloads/Gray_L-Shaped_Couch.usdz"; sourceTree = "<group>"; };
+		C2FF6C6C28521C7B00917A1B /* Modern_Couch.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Modern_Couch.usdz; path = ../../../../../../Downloads/Modern_Couch.usdz; sourceTree = "<group>"; };
+		C2FF6C6D28521C7B00917A1B /* Simple_dining_table.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Simple_dining_table.usdz; path = ../../../../../../Downloads/Simple_dining_table.usdz; sourceTree = "<group>"; };
+		C2FF6C6E28521C7C00917A1B /* Coffee_Table.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Coffee_Table.usdz; path = ../../../../../../Downloads/Coffee_Table.usdz; sourceTree = "<group>"; };
+		C2FF6C6F28521C7C00917A1B /* Basket_Swing_Chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Basket_Swing_Chair.usdz; path = ../../../../../../Downloads/Basket_Swing_Chair.usdz; sourceTree = "<group>"; };
+		C2FF6C7028521C7C00917A1B /* Modern_Bed.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Modern_Bed.usdz; path = ../../../../../../Downloads/Modern_Bed.usdz; sourceTree = "<group>"; };
+		C2FF6C7128521C7C00917A1B /* Office_chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Office_chair.usdz; path = ../../../../../../Downloads/Office_chair.usdz; sourceTree = "<group>"; };
+		C2FF6C7228521C7C00917A1B /* Old_Chair.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Old_Chair.usdz; path = ../../../../../../Downloads/Old_Chair.usdz; sourceTree = "<group>"; };
+		C2FF6C7428521C7C00917A1B /* Bed_Milana.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Bed_Milana.usdz; path = ../../../../../../Downloads/Bed_Milana.usdz; sourceTree = "<group>"; };
+		C2FF6C7528521C7C00917A1B /* Bed_Sicilia.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Bed_Sicilia.usdz; path = ../../../../../../Downloads/Bed_Sicilia.usdz; sourceTree = "<group>"; };
+		C2FF6C7628521C7C00917A1B /* Modern_Table_Set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = Modern_Table_Set.usdz; path = ../../../../../../Downloads/Modern_Table_Set.usdz; sourceTree = "<group>"; };
+		C2FF6C8D28521FA500917A1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C2FF6C8F285223EA00917A1B /* ModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewModel.swift; sourceTree = "<group>"; };
+		C2FF6C91285228F500917A1B /* FirebaseStorageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorageHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29B6598284E0F900052B07F /* FocusEntity in Frameworks */,
+				C2FF6C8628521EF000917A1B /* FirebaseAuth in Frameworks */,
+				C2FF6C8828521EF000917A1B /* FirebaseFirestore in Frameworks */,
+				C2FF6C8C28521EF000917A1B /* FirebaseStorage in Frameworks */,
+				C2FF6C8A28521EF000917A1B /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +154,7 @@
 		C2CD20D0284613350064EBF9 /* ARFurniture */ = {
 			isa = PBXGroup;
 			children = (
+				C2FF6C8D28521FA500917A1B /* GoogleService-Info.plist */,
 				C2CD20D1284613350064EBF9 /* ARFurnitureApp.swift */,
 				C2CD20D3284613350064EBF9 /* ContentView.swift */,
 				C29B6599284E0FC30052B07F /* CustomARView.swift */,
@@ -150,11 +165,13 @@
 				C29B6592284E0A500052B07F /* PlacementSettings.swift */,
 				C29B659D284F4E6D0052B07F /* SessionSettings.swift */,
 				C2CD21022849F7F60064EBF9 /* Model.swift */,
+				C2FF6C8F285223EA00917A1B /* ModelsViewModel.swift */,
 				C29B659B284F4A080052B07F /* View+Extensions.swift */,
 				C2CD20FD284654400064EBF9 /* 3D Assets */,
 				C2CD20D5284613370064EBF9 /* Assets.xcassets */,
 				C2CD20D7284613370064EBF9 /* Preview Content */,
 				498A5B042850BF95007508DD /* Landing.swift */,
+				C2FF6C91285228F500917A1B /* FirebaseStorageHelper.swift */,
 			);
 			path = ARFurniture;
 			sourceTree = "<group>";
@@ -187,18 +204,18 @@
 		C2CD20FD284654400064EBF9 /* 3D Assets */ = {
 			isa = PBXGroup;
 			children = (
-				49FAEF6E2850A01A008691A1 /* Basket_Swing_Chair.usdz */,
-				49FAEF762850A01B008691A1 /* Bed_Milana.usdz */,
-				49FAEF782850A01B008691A1 /* Bed_Sicilia.usdz */,
-				49FAEF742850A01B008691A1 /* Black_Leather_Couch.usdz */,
-				49FAEF6F2850A01A008691A1 /* Coffee_Table.usdz */,
-				49FAEF702850A01B008691A1 /* Gray_L-Shaped_Couch.usdz */,
-				49FAEF772850A01B008691A1 /* Modern_Bed.usdz */,
-				49FAEF6D2850A01A008691A1 /* Modern_Couch.usdz */,
-				49FAEF712850A01B008691A1 /* Modern_Table_Set.usdz */,
-				49FAEF732850A01B008691A1 /* Office_chair.usdz */,
-				49FAEF752850A01B008691A1 /* Old_Chair.usdz */,
-				49FAEF722850A01B008691A1 /* Simple_dining_table.usdz */,
+				C2FF6C6F28521C7C00917A1B /* Basket_Swing_Chair.usdz */,
+				C2FF6C7428521C7C00917A1B /* Bed_Milana.usdz */,
+				C2FF6C7528521C7C00917A1B /* Bed_Sicilia.usdz */,
+				C2FF6C6A28521C7B00917A1B /* Black_Leather_Couch.usdz */,
+				C2FF6C6E28521C7C00917A1B /* Coffee_Table.usdz */,
+				C2FF6C6B28521C7B00917A1B /* Gray_L-Shaped_Couch.usdz */,
+				C2FF6C7028521C7C00917A1B /* Modern_Bed.usdz */,
+				C2FF6C6C28521C7B00917A1B /* Modern_Couch.usdz */,
+				C2FF6C7628521C7C00917A1B /* Modern_Table_Set.usdz */,
+				C2FF6C7128521C7C00917A1B /* Office_chair.usdz */,
+				C2FF6C7228521C7C00917A1B /* Old_Chair.usdz */,
+				C2FF6C6D28521C7B00917A1B /* Simple_dining_table.usdz */,
 			);
 			path = "3D Assets";
 			sourceTree = "<group>";
@@ -221,6 +238,10 @@
 			name = ARFurniture;
 			packageProductDependencies = (
 				C29B6597284E0F900052B07F /* FocusEntity */,
+				C2FF6C8528521EF000917A1B /* FirebaseAuth */,
+				C2FF6C8728521EF000917A1B /* FirebaseFirestore */,
+				C2FF6C8928521EF000917A1B /* FirebaseFirestoreSwift */,
+				C2FF6C8B28521EF000917A1B /* FirebaseStorage */,
 			);
 			productName = ARFurniture;
 			productReference = C2CD20CE284613350064EBF9 /* ARFurniture.app */;
@@ -296,6 +317,7 @@
 			mainGroup = C2CD20C5284613350064EBF9;
 			packageReferences = (
 				C29B6596284E0F900052B07F /* XCRemoteSwiftPackageReference "FocusEntity" */,
+				C2FF6C8428521EF000917A1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = C2CD20CF284613350064EBF9 /* Products */;
 			projectDirPath = "";
@@ -313,20 +335,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49FAEF792850A01B008691A1 /* Modern_Couch.usdz in Resources */,
-				49FAEF7C2850A01B008691A1 /* Gray_L-Shaped_Couch.usdz in Resources */,
-				49FAEF7A2850A01B008691A1 /* Basket_Swing_Chair.usdz in Resources */,
-				49FAEF7F2850A01B008691A1 /* Office_chair.usdz in Resources */,
-				49FAEF822850A01B008691A1 /* Bed_Milana.usdz in Resources */,
-				49FAEF832850A01B008691A1 /* Modern_Bed.usdz in Resources */,
-				49FAEF812850A01B008691A1 /* Old_Chair.usdz in Resources */,
-				49FAEF7D2850A01B008691A1 /* Modern_Table_Set.usdz in Resources */,
-				49FAEF802850A01B008691A1 /* Black_Leather_Couch.usdz in Resources */,
-				49FAEF7B2850A01B008691A1 /* Coffee_Table.usdz in Resources */,
+				C2FF6C7928521C7C00917A1B /* Modern_Couch.usdz in Resources */,
+				C2FF6C7E28521C7C00917A1B /* Office_chair.usdz in Resources */,
+				C2FF6C8E28521FA500917A1B /* GoogleService-Info.plist in Resources */,
+				C2FF6C7A28521C7C00917A1B /* Simple_dining_table.usdz in Resources */,
+				C2FF6C7C28521C7C00917A1B /* Basket_Swing_Chair.usdz in Resources */,
+				C2FF6C7D28521C7C00917A1B /* Modern_Bed.usdz in Resources */,
+				C2FF6C7F28521C7C00917A1B /* Old_Chair.usdz in Resources */,
+				C2FF6C8228521C7C00917A1B /* Bed_Sicilia.usdz in Resources */,
+				C2FF6C7728521C7C00917A1B /* Black_Leather_Couch.usdz in Resources */,
+				C2FF6C7B28521C7C00917A1B /* Coffee_Table.usdz in Resources */,
+				C2FF6C7828521C7C00917A1B /* Gray_L-Shaped_Couch.usdz in Resources */,
 				C2CD20D9284613370064EBF9 /* Preview Assets.xcassets in Resources */,
-				49FAEF7E2850A01B008691A1 /* Simple_dining_table.usdz in Resources */,
-				49FAEF842850A01B008691A1 /* Bed_Sicilia.usdz in Resources */,
 				C2CD20D6284613370064EBF9 /* Assets.xcassets in Resources */,
+				C2FF6C8328521C7C00917A1B /* Modern_Table_Set.usdz in Resources */,
+				C2FF6C8128521C7C00917A1B /* Bed_Milana.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,8 +374,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2FF6C92285228F500917A1B /* FirebaseStorageHelper.swift in Sources */,
 				C29B6593284E0A500052B07F /* PlacementSettings.swift in Sources */,
 				C29B659E284F4E6D0052B07F /* SessionSettings.swift in Sources */,
+				C2FF6C90285223EA00917A1B /* ModelsViewModel.swift in Sources */,
 				C29B659C284F4A080052B07F /* View+Extensions.swift in Sources */,
 				C2CD21032849F7F60064EBF9 /* Model.swift in Sources */,
 				C2CD21012848FFCB0064EBF9 /* BrowseView.swift in Sources */,
@@ -697,6 +722,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		C2FF6C8428521EF000917A1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -704,6 +737,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C29B6596284E0F900052B07F /* XCRemoteSwiftPackageReference "FocusEntity" */;
 			productName = FocusEntity;
+		};
+		C2FF6C8528521EF000917A1B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2FF6C8428521EF000917A1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C2FF6C8728521EF000917A1B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2FF6C8428521EF000917A1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C2FF6C8928521EF000917A1B /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2FF6C8428521EF000917A1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		C2FF6C8B28521EF000917A1B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2FF6C8428521EF000917A1B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -57,17 +57,21 @@ struct ModelsByCategories: View {
     
     @Binding var showBrowse: Bool
     
-    let models = Models()
+    @ObservedObject private var viewModel = ModelsViewModel()
     
     var body: some View {
         VStack {
-            ForEach(ModelCategory.allCases, id: \.self) { category in
+            ForEach( ModelCategory.allValues, id: \.self) { category in
                 
                 
-                if let modelsByCategory = models.get(category: category) {
+                if let modelsByCategory = viewModel.models.filter({ $0.category == category }) {
                     HorizontalView(showBrowse: $showBrowse, title: category.label, items: modelsByCategory)
                 }
             }
+        }
+        .onAppear() {
+            
+            self.viewModel.fetchData()
         }
     }
 }
@@ -95,7 +99,7 @@ struct HorizontalView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: gridItemLayout, spacing: 30) {
-                    ForEach(0..<items.count) {index in
+                    ForEach(0..<items.count, id: \.self) {index in
                         
                        let model = items[index]
                         ItemButton(model: model) {
@@ -114,7 +118,7 @@ struct HorizontalView: View {
 
 struct ItemButton:View {
     
-    let model: Model
+    @ObservedObject var model: Model
     let action: () -> Void
     
     

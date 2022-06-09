@@ -10,7 +10,7 @@ import RealityKit
 import Combine
 
 
-enum ModelCategory: CaseIterable  {
+enum ModelCategory: String  {
     
     case table
     case chair
@@ -34,12 +34,17 @@ enum ModelCategory: CaseIterable  {
             }
         }
     }
+    
+    
+    static let allValues = [ ModelCategory.table, ModelCategory.chair, ModelCategory.couch, ModelCategory.bed, ModelCategory.decor]
 }
 
-class Model {
+class Model: ObservableObject,Identifiable {
+    
+    var id: String = UUID().uuidString
     var name: String
     var category: ModelCategory
-    var thumbnail: UIImage
+   @Published var thumbnail: UIImage
     var modelEntity: ModelEntity?
     var scaleCompensation: Float
     
@@ -49,61 +54,38 @@ class Model {
     init(name:String, category:ModelCategory, scaleComponesation: Float = 1.0) {
         self.name = name
         self.category = category
-        self.thumbnail = UIImage(named: name) ?? UIImage(systemName:"photo")!
+        self.thumbnail = UIImage(systemName:"photo")!
         self.scaleCompensation = scaleComponesation
+        
+        
+        FirebaseStorageHelper.asyncDownloadToFilesystem(relativePath: "thumbnails/\(self.name).png") { localUrl in
+            do {
+                let imageData = try Data(contentsOf: localUrl)
+                self.thumbnail = UIImage(data: imageData) ?? self.thumbnail
+            } catch {
+                print("Error loading image: \(error.localizedDescription)")
+            }
+        }
     }
     
     
     func asyncLoadModelEntity() {
-        let filename = self.name + ".usdz"
-        self.cancellable = ModelEntity.loadModelAsync(named: filename)
-            .sink(receiveCompletion: { loadCompletion in
-                switch loadCompletion {
-                case .failure(let error): print("Unable to load modelEntity for \(filename).Error: \(error.localizedDescription)")
-                case.finished:
-                    break
-                }
-                                                
-            }, receiveValue: { modelEntity in
-                    self.modelEntity = modelEntity
-                    
-                    self.modelEntity?.scale *= self.scaleCompensation
-                    print("modelEntity for \(self.name) has been loaded.")
-            })
+        FirebaseStorageHelper.asyncDownloadToFilesystem(relativePath: "models/\(self.name).usdz") { localUrl in
+            self.cancellable = ModelEntity.loadModelAsync(contentsOf: localUrl)
+                .sink(receiveCompletion: { loadCompletion in
+                    switch loadCompletion {
+                    case .failure(let error): print("Unable to load modelEntity for \(self.name).Error: \(error.localizedDescription)")
+                    case.finished:
+                        break
+                    }
+                                                    
+                }, receiveValue: { modelEntity in
+                        self.modelEntity = modelEntity
+                        
+                        self.modelEntity?.scale *= self.scaleCompensation
+                        print("modelEntity for \(self.name) has been loaded.")
+                })
+        }
     }
 }
 
-struct Models {
-    var all: [Model] = []
-    
-    init() {
-        
-        //tables
-        let coffeeTable = Model(name:"Coffee_Table",category: .table, scaleComponesation: 30/100)
-        let simpleDiningTable = Model(name:"Simple_dining_table",category: .table, scaleComponesation: 25/100)
-        
-        //chairs
-        let basketSwingChair = Model(name:"Basket_Swing_Chair",category: .chair, scaleComponesation: 40/100)
-        let officeChair = Model(name:"Office_chair",category: .chair, scaleComponesation: 75/100)
-        let oldChair = Model(name:"Old_Chair",category: .chair, scaleComponesation: 75/100)
-        
-        //couches
-        let blackLeatherCouch = Model(name:"Black_Leather_Couch",category: .couch, scaleComponesation: 50/100)
-        let grayLShapedCouch = Model(name:"Gray_L-Shaped_Couch",category: .couch, scaleComponesation: 50/100)
-        let modernCouch = Model(name:"Modern_Couch",category: .couch, scaleComponesation: 50/100)
-        
-        //beds
-        let bedMilana = Model(name:"Bed_Milana",category: .bed, scaleComponesation: 35/100)
-        let bedSicilia = Model(name:"Bed_Sicilia",category: .bed, scaleComponesation: 50/100)
-        let modernBed = Model(name:"Modern_Bed",category: .bed, scaleComponesation: 50/100)
-        
-        //decor
-        let modernTableSet = Model(name:"Modern_Table_Set",category: .decor, scaleComponesation: 45/100)
-        
-        self.all += [coffeeTable,simpleDiningTable, basketSwingChair, officeChair, oldChair, blackLeatherCouch, grayLShapedCouch, modernCouch, bedMilana, bedSicilia, modernBed, modernTableSet]
-    }
-    
-    func get(category:ModelCategory) -> [Model]{
-        return all.filter({$0.category == category})
-    }
-}
