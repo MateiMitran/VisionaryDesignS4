@@ -12,8 +12,9 @@ import Firebase
 struct ARFurnitureApp: App {
     @StateObject var placementSettings = PlacementSettings()
     @StateObject var sessionSettings = SessionSettings()
-    
-    
+    @StateObject var sceneManager = SceneManager()
+    @StateObject var modelsViewModel = ModelsViewModel()
+    @StateObject var modelDeletionManager = ModelDeletionManager()
     init() {
         FirebaseApp.configure()
         
@@ -33,6 +34,9 @@ struct ARFurnitureApp: App {
             Landing()
                 .environmentObject(placementSettings)
                 .environmentObject(sessionSettings)
+                .environmentObject(sceneManager)
+                .environmentObject(modelsViewModel)
+                .environmentObject(modelDeletionManager)
         }
     }
 }

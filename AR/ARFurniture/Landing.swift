@@ -30,12 +30,12 @@ struct Landing: View {
             
             
             Text("Visionary")
-                .font(.custom("Arsenal-Regular", size: 60))
+               // .font(.custom("Arsenal-Regular", size: 60))
                 .position(x: 200, y: 55)
                 .foregroundColor(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 0.72, saturation: 0.466, brightness: 0.648)/*@END_MENU_TOKEN@*/)
             
             Text("Design")
-                .font(.custom("PlayfairDisplay-Regular", size: 45))
+               // .font(.custom("PlayfairDisplay-Regular", size: 45))
                 .position(x: 200, y: -30)
                 .foregroundColor(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 0.72, saturation: 0.466, brightness: 0.648)/*@END_MENU_TOKEN@*/)
             

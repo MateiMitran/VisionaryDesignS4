@@ -15,6 +15,19 @@ class CustomARView: ARView {
     
     var focusEntity: FocusEntity?
     var sessionSettings: SessionSettings
+    var modelDeletionManager: ModelDeletionManager
+    
+    
+    var defaultConfiguration: ARWorldTrackingConfiguration {
+        let config = ARWorldTrackingConfiguration()
+        config.planeDetection = [.horizontal, .vertical]
+        
+        if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
+            config.sceneReconstruction = .mesh
+        }
+        
+        return config
+    }
     
     private var peopleOcclusionCancellable: AnyCancellable?
     private var objectOcclusionCancellable: AnyCancellable?
@@ -22,9 +35,9 @@ class CustomARView: ARView {
     private var multiuserCancellable: AnyCancellable?
     
     
-    required init(frame frameRect: CGRect, sessionSettings: SessionSettings) {
+    required init(frame frameRect: CGRect, sessionSettings: SessionSettings, modelDeletionManager: ModelDeletionManager) {
         self.sessionSettings = sessionSettings
-        
+        self.modelDeletionManager = modelDeletionManager
         super.init(frame: frameRect)
         
         focusEntity = FocusEntity(on: self, focus: .classic)
@@ -34,6 +47,9 @@ class CustomARView: ARView {
         self.initializeSettings()
         
         self.setupSubscribers()
+        
+        
+        self.enableObjectDeletion()
     }
     
     required init(frame frameRect: CGRect) {
@@ -47,14 +63,9 @@ class CustomARView: ARView {
     
     
     private func configure() {
-        let config = ARWorldTrackingConfiguration()
-        config.planeDetection = [.horizontal, .vertical]
         
-        if ARWorldTrackingConfiguration.supportsSceneReconstruction(.mesh) {
-            config.sceneReconstruction = .mesh
-        }
         
-        session.run(config)
+        session.run(defaultConfiguration)
     }
     
     private func initializeSettings() {
@@ -119,5 +130,22 @@ class CustomARView: ARView {
     }
     private func updateMultiuser(isEnabled: Bool) {
         print("\(#file): isMultiuser is now \(isEnabled)")
+    }
+}
+
+
+extension CustomARView {
+    func enableObjectDeletion() {
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action:
+                                                                #selector(handleLongPress(recognizer:)))
+        self.addGestureRecognizer(longPressGesture)
+    }
+    
+    @objc func handleLongPress(recognizer: UILongPressGestureRecognizer) {
+        let location = recognizer.location(in: self)
+        
+        if let entity = self.entity(at: location) as? ModelEntity {
+            modelDeletionManager.entitySelectedForDeletion = entity
+        }
     }
 }
